@@ -1,0 +1,18 @@
+generated: '2026-10-08'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://www.claravine.com/pricing/
+sources:
+- https://www.claravine.com/pricing/
+- https://www.claravine.com/platform/claravine-management/
+name: Claravine pricing
+audience: business-product
+pricing_basis: negotiated
+plans:
+- name: Essential
+  price_text: Contact Sales
+- name: Premium
+  price_text: Contact Sales
+- name: Premium Plus
+  price_text: Contact Sales
+docs: https://www.claravine.com/pricing/

@@ -1,23 +1,113 @@
 aid: claravine
+
 name: Claravine
-description: 'Claravine is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.claravine.com/og/index.png
+
+description: Claravine provides a Data Standards Platform that helps enterprises govern taxonomy and naming standards across marketing campaigns,
+  content, and data pipelines. Their SaaS solution integrates with major ad platforms, CRM, and analytics tools, offering APIs for submitting
+  and reading standardized data, security features like SOC 2 Type II, SSO, and RBAC, and tools for AI‑assisted taxonomy management. The company
+  serves agencies, retailers, CPG, healthcare, automotive, and other industries, emphasizing data consistency at scale.
+
 url: https://raw.githubusercontent.com/api-evangelist/claravine/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-08 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-08'
+
 modified: '2026-10-08'
+
 tags:
 - Company
-apis: []
+- Data-Standards
+- Marketing
+- SaaS
+- API
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Plans
+  url: plans/claravine-plans-pricing.yml
+- type: Security
+  url: security/claravine-vulnerability-disclosure.yml
+- type: Conformance
+  url: conformance/claravine-conformance.yml
+- type: SecurityTxt
+  url: well-known/claravine-status-security.txt
+- type: WellKnown
+  url: well-known/claravine-well-known.yml
+- type: Hosts
+  url: hosts/claravine-hosts.yml
+- type: Vendors
+  url: vendors/claravine-vendors.yml
+- type: TermsOfService
+  url: https://www.claravine.com/legal/terms/
+- type: StatusPage
+  url: https://status.claravine.com/
+- type: PrivacyPolicy
+  url: https://www.claravine.com/legal/privacy/
+- type: Newsroom
+  url: https://www.claravine.com/company/news/
+- type: VulnerabilityDisclosure
+  url: security/claravine-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/claravine-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.claravine.com/
+- type: Documentation
+  url: https://www.claravine.com/platform/
+- type: APIReference
+  url: https://www.claravine.com/platform/api/
+- type: GettingStarted
+  url: https://www.claravine.com/platform/api/
+- type: Pricing
+  url: https://www.claravine.com/pricing/
+- type: Blog
+  url: https://www.claravine.com/blog/
+- type: Support
+  url: https://support.claravine.com/hc/en-us/
+
+apis:
+- name: Claravine API
+  description: Provides Data Standards Cloud API and Classification API as described in the Getting Started guide.
+  humanURL: https://claravine.readme.io/reference/getting-started-with-your-api-2
+  baseURL: null
+  aid: claravine:claravine-api-2
+- aid: claravine:claravine-api
+  name: Claravine API
+  description: 'Claravine API as documented publicly: 0 operations. Contract generated from the documentation by API Evangelist (2026-10-08);
+
+    not the provider''s own document.'
+  humanURL: https://www.claravine.com/platform/api
+  baseURL: https://api.claravine.com
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/claravine-openapi-generated.yml
+    x-provenance: generated
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: The provider's documentation pages contain no machine‑readable OpenAPI, GraphQL, AsyncAPI, gRPC or WSDL specifications.
+  evidence:
+  - url: https://api.claravine.com/openapi.json
+    status: 200
+  checked: '2026-10-08'
+x-enrichment:
+  date: '2026-10-08'
+  status: enriched
+  artifacts_added: 11
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

@@ -1,0 +1,102 @@
+generated: '2026-10-08'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 6
+  own: 5
+  other_domain: 1
+  platform: 0
+  roles:
+  - api
+  - identity
+  - other
+  - status
+  - support
+  - website
+hosts:
+- host: api.claravine.com
+  found_by:
+  - apis[]
+  - contract-discovery
+  types: []
+  serves:
+  - api
+  registrable_domain: claravine.com
+  role: api
+  relation: own
+- host: claravine.readme.io
+  found_by:
+  - apis[]
+  types: []
+  serves:
+  - docs
+  registrable_domain: readme.io
+  role: other
+  relation: other-domain
+- host: login.claravine.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: claravine.com
+  role: identity
+  relation: own
+- host: status.claravine.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - StatusPage
+  serves: []
+  registrable_domain: claravine.com
+  role: status
+  relation: own
+- host: support.claravine.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Support
+  serves:
+  - support
+  vendor: zendesk
+  registrable_domain: claravine.com
+  role: support
+  relation: own
+- host: www.claravine.com
+  found_by:
+  - pointer
+  - apis[]
+  - probed
+  - docs-index
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - TermsOfService
+  - PrivacyPolicy
+  - Newsroom
+  - Website
+  - Documentation
+  - APIReference
+  - GettingStarted
+  - Pricing
+  - Blog
+  serves:
+  - docs
+  - cdn
+  vendor: cloudfront
+  registrable_domain: claravine.com
+  role: website
+  relation: own

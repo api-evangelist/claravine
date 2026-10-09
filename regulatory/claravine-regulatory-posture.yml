@@ -1,0 +1,59 @@
+generated: '2026-10-08'
+source: https://www.claravine.com/legal/privacy/
+method: searched
+signals:
+  data_subject_request:
+    - source: https://www.claravine.com/legal/privacy/
+      http_status: 200
+      fetched: true
+      quote: "You may request that we transfer some of the personal data you have provided to us or another service provider in electronic copy."
+      section: "6. International Data Transfers"
+      note: Allows data portability requests.
+    - source: https://www.claravine.com/legal/privacy/
+      http_status: 200
+      fetched: true
+      quote: "We will retain information in accordance with the “How Long Is Your Personal Data Kept” section below."
+      section: "Data Retention"
+      note: Mentions retention period.
+  data_retention:
+    - source: https://www.claravine.com/legal/privacy/
+      http_status: 200
+      fetched: true
+      quote: "We will retain information in accordance with the “How Long Is Your Personal Data Kept” section below."
+      section: "Data Retention"
+      note: Describes retention policy.
+  subprocessors:
+    - source: https://www.claravine.com/legal/privacy/
+      http_status: 200
+      fetched: true
+      quote: "We do not share or send any of our customers’ personal data to third party AI cloud services outside of our secure cloud infrastructure."
+      section: "AI Services"
+      note: States no third‑party AI processors.
+  ai_transparency:
+    - source: https://www.claravine.com/legal/privacy/
+      http_status: 200
+      fetched: true
+      quote: "We offer services that our customers may specifically request from us called Claravine AI, but we do not use artificial intelligence (AI) to process your personal data."
+      section: "AI Services"
+      note: Declares no AI processing of personal data.
+  incident_notification:
+    - source: https://www.claravine.com/legal/privacy/
+      http_status: 200
+      fetched: true
+      quote: "Your personal data can be subject to access requests from governments, courts, or law enforcement in the United States according to the laws of the United States."
+      section: "International Data Transfers"
+      note: Mentions potential government access but no explicit breach notification.
+  data_residency:
+    - source: https://www.claravine.com/legal/privacy/
+      http_status: 200
+      fetched: true
+      quote: "For any transfers of personal data from the European Economic Area (EEA), Switzerland or the United Kingdom that we make to other entities as described in this Privacy Policy, we use appropriate safeguards... including standard contractual clauses."
+      section: "International Data Transfers"
+      note: Provides safeguards for cross‑border transfers.
+  do_not_track:
+    - source: https://www.claravine.com/legal/privacy/
+      http_status: 200
+      fetched: true
+      quote: "7. Do Not Track” Signals"
+      section: "Do Not Track"
+      note: Acknowledges DNT signals.
